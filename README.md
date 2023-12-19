@@ -80,12 +80,36 @@ if __name__ == "__main__":
     main()
 README.md: This file will contain a brief explanation of the game and instructions on how to play.
 
-markdown
-Copy code
 # Frog Leap Puzzle Game
 
 This is a simple Python implementation of the Frog Leap puzzle game.
 
+display_positions Function: This function takes a list of positions as input and prints the indices and the elements of the list to display the current state of the game.
+
+check_winning_condition Function: This function checks if the winning condition is met. The winning condition is when all the frogs are arranged in the order 'B', 'B', 'B', '-', 'G', 'G', 'G'.
+
+main Function: This is the main function that runs the game. It contains an infinite loop to keep the game running until the player quits or wins. It checks for the winning condition, takes user input, and makes moves based on the conditions specified in the game rules.
+
+Game Rules:
+
+Frogs labeled 'G' can only move to the right.
+Frogs labeled 'B' can only move to the left.
+Frogs can jump over an adjacent frog to an empty leaf.
+User Input:
+
+The player can input the position of the frog they want to move.
+Pressing 'q' will quit the game.
+Valid Moves:
+
+Valid moves are determined based on the rules mentioned above.
+If a move is valid, the game state is updated by swapping the positions of the frogs.
+Winning Condition:
+
+The game checks for the winning condition after each move.
+If the winning condition is met, the game displays "You Win!" and exits.
+Error Handling:
+
+The script handles invalid inputs gracefully, such as non-integer inputs or positions that are out of bounds.
 ## How to Play
 
 - Run the `frog_leap_game.py` script in your Python environment.
